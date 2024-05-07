@@ -4,15 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Blog</title>
-    <link rel="stylesheet" href="./assete/css/form.css" href="./assete/css/styles.css">
-    <button class="btn">
-        <img class="moon" src="https://easydrawingguides.com/wp-content/uploads/2023/01/how-to-draw-a-cartoon-moon-featured-image-1200.png"alt="moon"></img>
-        <img class="sun" src="https://thumbs.dreamstime.com/z/smiling-sun-illustration-character-34434947.jpg" alt="sun"></img>
-        </button>
+    <link rel="stylesheet" href="./assete/css/form.css">
+    <link rel="stylesheet" href="./assete/css/styles.css">
+   
 </head>
+
+<header>
+     <button id="mode-toggle">Toggle Dark/Light Mode</button>
+</header>
 <body>
-    <img class="shpere" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0pCeR6IOTw_p4zV1kPWyGvcvycB425OA1SA&usqp=CAU" alt="yellow shpere">
-    <div class="center">My First Blog</div>
+    <form id="blog-post">
+        <h3>Whats on your mind?</h1>
+        <!-- <h5>username</h5> -->
+        <input type="text" class="username" placeholder="Username">
+        <input type="'text" class=" Title" placeholder="Title">
+        <textarea id="content" rows="4" cols="60" form=" blog post" placeholder="content"></textarea>
+ 
+    </form>
+    
+
+    <script>
+        const modeToggle = document.getElementById('mode-toggle');
+        const body = document.body;
+
+        modeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+        });
+    </script>
+    <section>
+        <img class="shpere" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0pCeR6IOTw_p4zV1kPWyGvcvycB425OA1SA&usqp=CAU" alt="yellow shpere">
+        <div class="center">My First Blog</div>
+    </section>
     
     <script src="./assete/js/form.js" src="./assete/js/logic.js"></script>
 </body>

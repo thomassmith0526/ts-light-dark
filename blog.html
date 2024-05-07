@@ -4,21 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Second page</title>
-    <link rel="html" href="./index.html">
-    <link rel="stylesheet" href="./assete/css/blog.css" href="./assete/css/styles.css">
+    <link rel="stylesheet" href="./assete/css/blog.css">
+    <link rel=" stylesheet" href="./assete/css/styles.css">
 </head>
 
 <header>
-    <button class="btn">
-        <img class="moon" src="https://easydrawingguides.com/wp-content/uploads/2023/01/how-to-draw-a-cartoon-moon-featured-image-1200.png"alt="moon"></img>
-        <img class="sun" src="https://thumbs.dreamstime.com/z/smiling-sun-illustration-character-34434947.jpg" alt="sun"></img>
-        </button>
-     <div>
-        <input type ="button" value="back" onclick="history">
-    </div>
+   <button id="mode-toggle">Toggle Dark/Light Mode</button>
+   <button id="back" onclick="">back</button>
+   
 </header>
 <body> 
-   
+    <section id="blog list">
+        
+    </section>
+
+    <script>
+        const modeToggle = document.getElementById('mode-toggle');
+        const body = document.body;
+
+        modeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+        });
+    </script>
     <script src="./assete/js/blog.js" src="./assete/js/logic.js"></script>
 </body>
+
+<footer>
+    <ul>
+        <li> <h1></h1></li>
+    </ul>
+
+
+</footer>
 </html>

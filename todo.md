@@ -55,3 +55,11 @@ PERSONAL BLOG
                     - author
 11) the footer
     - link to the developer's portfolio (html)
+
+  aritcle - 1-4
+    h2 - header blog title   JS
+    contect - blog
+    p  - autour name
+    
+  onclick"function in js"
+  elementbyid 
