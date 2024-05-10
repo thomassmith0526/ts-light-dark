@@ -21,6 +21,7 @@ header {
 #mode-toggle {
     margin-left: 85%;
     margin-bottom: 10px;
+    background-color: red;
 }
 body {
     padding: 25px;
@@ -85,4 +86,11 @@ h3 {
   bottom: 225px;
   right: 106.5px;
   border: 2px solid black;
+}
+button {
+  background-color: black;
+  color: white;
+  position: relative;
+  left: 50px;
+  top: 125px;
 }

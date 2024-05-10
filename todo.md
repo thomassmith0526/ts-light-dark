@@ -63,3 +63,9 @@ PERSONAL BLOG
     
   onclick"function in js"
   elementbyid 
+
+ funtions click submit loads to the blog
+  funtions form evaulation
+  save blog fuction eventlisnter save blog then move it over to blog page (if)
+look back at 26
+create an arry inside function for tilte username and content 

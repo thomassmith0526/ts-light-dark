@@ -31,3 +31,6 @@ header {
     border-bottom: 5px solid black;
     
 }
+#First, #Second, #Third, #Fourth {
+  border: 5px solid black;
+}
