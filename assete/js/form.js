@@ -4,7 +4,7 @@ const contentInput = document.getElementById('content')
 const blogpost = document.getElementById('blog-post')
 const submitButton = document.getElementById('submit')
 
-console.log(submitButton,blogpost)
+console.log(titleInput)
 submitButton.addEventListener('click', function (event) {
     event.preventDefault();
     const blogtext = {
