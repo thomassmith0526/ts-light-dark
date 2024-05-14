@@ -6,37 +6,16 @@
     <title>Second page</title>
     <link rel=" stylesheet" href="./assete/css/styles.css">
     <link rel="stylesheet" href="./assete/css/blog.css">
-    <script defer src="./assete/js/logic.js" type ="javascript"></script>
-    <script defer src="./assete/js/blog.js" type="javascript"></script>
-    <script defer src="assete/js/form.js" type="javascript"></script>
-
+    
 </head>
 
 <header>
    <button id="mode-toggle">Toggle Dark/Light Mode</button>
-   <button id="back" onclick="">BACK</button>
+   <a id="back" href="./index.html">BACK</a>
    <h1>My First Blog</h1>
 </header>
 <body> 
-    
-    <div id="First">
-        
-    </div>
-    <div id="Second">
-        will this work 
-
-    </div>
-    <div id="Third">
-        will this work
-
-    </div>
-    <div id="Fourth">
-        will this work 
-
-    </div>
-
-
-    <script>
+   <script>
         const modeToggle = document.getElementById('mode-toggle');
         const body = document.body;
 
@@ -44,7 +23,20 @@
             body.classList.toggle('dark-mode');
         });
     </script>
+     <main id="blogText">
+
+
+
+
+
+
+        
+    </main>
+
+     
    
+    
+
 </body>
 
 <footer>
@@ -56,4 +48,10 @@
 
 
 </footer>
+
+<script  src="./assete/js/blog.js"></script>
+     <script src="./assete/js/logic.js"></script>
+     <script src="./assete/js/form.js"></script>
 </html>
+
+    

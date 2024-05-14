@@ -1,36 +1,54 @@
-const usernameInput = document.getElementsByClassName('username')
-const titleInput = document.getElementsByClassName('Title')
-const contentInput = document.getElementById('content')
-const blogpost = document.getElementById('blog-post')
+
 const submitButton = document.getElementById('submit')
+const blogpost = document.getElementById('blog-post')
 
-console.log(titleInput)
-submitButton.addEventListener('click', function (event) {
-    event.preventDefault();
-    const blogtext = {
-        username: usernameInput.value,
-        title: titleInput.value,
-        content: contentInput.value,
-    };
-    localStorage.setItem('blogtext', JSON.stringify(blogtext));
+const handleFormSubmit =function (event) {
+    const usernameInput = document.getElementsByClassName('username').value.trim()
+    const titleInput = document.getElementsByClassName('Title').value.trim()
+    const contentInput = document.getElementById('content').value.trim()
+
+
+        // let formArray = [localStorage.getItem('formArray')]
+        // if (formArray[0] == null) {
+        //     formArray= []
+        //     console.log(null)
+        // } else {
+        //     formArray = JSON.parse([localStorage.getItem('formArray')])
+        // }    
+
+        event.preventDefault();
+
+        const formObject = {
+            usernameInput: usernameInput,
+            titleInput: titleInput,
+            contentInput: contentInput, 
+
+        }
+        console.log(formObject)
+        if(!usernameInput || !titleInput || !contentInput) {
+            const errorMes = document.getElementById('error');
+            errorMes.textContent= 'Please fill out the fields'
+        }
+        savetoLocalStorage(formObject)
+        redirectUrl()
    
-    renderMessage();
-});
+}
 
-function renderMessage() {
-    const lastpost = JSON.parse(localStorage.getItem('blogtext'));
-    console.log(lastpost.contentInput)
-    if(lastpost !== null) {
-        document.getElementById('#First').textContent = 'fsdkljhsd'
-        
+
+
+
+
+ const redirectUrl = function(){
+        location.href= "./blog.html"
+
+
     }
+const savetoLocalStorage = function(data) {
+    const blogstring =JSON.stringify()
+    localStorage.setItem('blogtext', blogstring)
+}
+submitButton.addEventListener('click', handleFormSubmit)
+// formArray.push(JSON.stringify(formObject));
 
-
-} 
- 
-// document.addEventListener('DOMContentLoaded', function() {
-//     document.getElementById('blogpost').addEventListener('submit', function(event) {
-//       event.preventDefault();
-//     })
-// })
+// localStorage.setItem('formArray', JSON.stringify(formArray));
 
