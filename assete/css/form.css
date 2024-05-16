@@ -68,14 +68,14 @@ h3 {
   font-family: Georgia, 'Times New Roman', Times, serif;
     
 }
-.username {
+#username {
     position: absolute;
     bottom: 375px;
     right: 400px;
     border: 2px solid black;
 
 }
-.Title {
+#title {
   position: absolute;
   bottom: 325px;
   right: 400px;

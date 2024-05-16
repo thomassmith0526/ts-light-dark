@@ -1,31 +1,25 @@
 
 const submitButton = document.getElementById('submit')
 const blogpost = document.getElementById('blog-post')
-
-const handleFormSubmit =function (event) {
-    const usernameInput = document.getElementsByClassName('username').value.trim()
-    const titleInput = document.getElementsByClassName('Title').value.trim()
-    const contentInput = document.getElementById('content').value.trim()
+const usernameInput = document.getElementById('username')
+const titleInput = document.getElementById('title')
+const contentInput = document.getElementById('content')
 
 
-        // let formArray = [localStorage.getItem('formArray')]
-        // if (formArray[0] == null) {
-        //     formArray= []
-        //     console.log(null)
-        // } else {
-        //     formArray = JSON.parse([localStorage.getItem('formArray')])
-        // }    
-
-        event.preventDefault();
+const handleFormSubmit = function (event) {
+     event.preventDefault();
+   const username = usernameInput.value
+   const title = titleInput.value
+   const content = contentInput.value
 
         const formObject = {
-            usernameInput: usernameInput,
-            titleInput: titleInput,
-            contentInput: contentInput, 
+            username: username,
+            title: title,
+            content: content, 
 
         }
-        console.log(formObject)
-        if(!usernameInput || !titleInput || !contentInput) {
+       
+        if(!username || !title || !content) {
             const errorMes = document.getElementById('error');
             errorMes.textContent= 'Please fill out the fields'
         }
@@ -38,13 +32,9 @@ const handleFormSubmit =function (event) {
 
 
 
- const redirectUrl = function(){
-        location.href= "./blog.html"
-
-
-    }
+ 
 const savetoLocalStorage = function(data) {
-    const blogstring =JSON.stringify()
+    const blogstring =JSON.stringify(data)
     localStorage.setItem('blogtext', blogstring)
 }
 submitButton.addEventListener('click', handleFormSubmit)
@@ -52,3 +42,8 @@ submitButton.addEventListener('click', handleFormSubmit)
 
 // localStorage.setItem('formArray', JSON.stringify(formArray));
 
+const redirectUrl = function(){
+        location.href= "./blog.html"
+
+
+    }
