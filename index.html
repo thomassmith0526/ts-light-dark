@@ -1,50 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My First Blog</title>
-    <link rel="stylesheet" href="./assete/css/styles.css">
-    <link rel="stylesheet" href="./assete/css/form.css">
-        
-   
-   
-</head>
+    <link rel="stylesheet" href="./assete/css/styles.css" />
+    <link rel="stylesheet" href="./assete/css/form.css" />
+  </head>
 
-<header>
-     <button id="mode-toggle">Toggle Dark/Light Mode</button>
-</header>
-<body>
-    
+  <header>
+    <button id="mode-toggle">Toggle Dark/Light Mode</button>
+  </header>
+  <body>
     <form id="blog-post">
-        <h3>Whats on your mind?</h3>
-        <!-- <h5>username</h5> -->
-        <input type="text" id="username" placeholder="Username">
-        <input type="'text" id="title" placeholder="Title">
-        <textarea id="content" rows="4" cols="60"  placeholder="content"></textarea>
-        <div id="error"></div>
-        <button id="submit">SUBMIT</button>
- 
+      <h3>Whats on your mind?</h3>
+      <!-- <h5>username</h5> -->
+      <label for="username" id="labelname">Username</label>
+      <input type="text" class="input" id="username" />
+       <label for="title" id="labeltitle">Title</label>
+      <input type="'text" class="input" id="title" />
+      <label for="content" id="labelcontent">Blog Post</label>
+      <textarea class="input" id="content" rows="4" cols="60"></textarea>
+      <div id="error"></div>
+      <button id="submit">SUBMIT</button>
     </form>
-    
 
     <script>
-        const modeToggle = document.getElementById('mode-toggle');
-        const body = document.body;
+      const modeToggle = document.getElementById("mode-toggle");
+      const body = document.body;
 
-        modeToggle.addEventListener('click', () => {
-            body.classList.toggle('dark-mode');
-        });
+      modeToggle.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+      });
     </script>
-    <section>
-        <img class="shpere" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0pCeR6IOTw_p4zV1kPWyGvcvycB425OA1SA&usqp=CAU" alt="yellow shpere">
-        <div class="center">My First Blog</div>
+    <section class="container">
+      <img
+        id="shpere"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0pCeR6IOTw_p4zV1kPWyGvcvycB425OA1SA&usqp=CAU"
+        alt="yellow shpere"
+      />
+      <div class="center">My First Blog</div>
     </section>
-    <script  src="./assete/js/form.js"></script>
-    <script  src="./assete/js/logic.js"></script>
-   
-
-
-    
-</body>
+    <script src="./assete/js/form.js"></script>
+    <script src="./assete/js/logic.js"></script>
+  </body>
 </html>

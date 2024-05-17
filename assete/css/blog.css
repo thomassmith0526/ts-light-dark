@@ -31,6 +31,18 @@ header {
     border-bottom: 5px solid black;
     
 }
+footer {
+  position: relative;
+}
+ul{
+  position: absolute;
+  font-size: 20px;
+}
+#love {
+  position: absolute;
+  right: 45%;
+  font-size: 12px;
+}
 /* #First, #Second, #Third, #Fourth {
   border: 5px solid black;
 } */

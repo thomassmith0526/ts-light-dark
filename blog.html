@@ -1,60 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Second page</title>
-    <link rel=" stylesheet" href="./assete/css/styles.css">
-    <link rel="stylesheet" href="./assete/css/blog.css">
-    
-</head>
+    <link rel=" stylesheet" href="./assete/css/styles.css" />
+    <link rel="stylesheet" href="./assete/css/blog.css" />
+  </head>
 
-<header>
-   <button id="mode-toggle">Toggle Dark/Light Mode</button>
-   <a id="back" href="./index.html">BACK</a>
-   <h1>My First Blog</h1>
-</header>
-<body> 
-   <script>
-        const modeToggle = document.getElementById('mode-toggle');
-        const body = document.body;
+  <header>
+    <button id="mode-toggle">Toggle Dark/Light Mode</button>
+    <a id="back" href="./index.html">BACK</a>
+    <h1>My First Blog</h1>
+  </header>
+  <body>
+    <script>
+      const modeToggle = document.getElementById("mode-toggle");
+      const body = document.body;
 
-        modeToggle.addEventListener('click', () => {
-            body.classList.toggle('dark-mode');
-        });
+      modeToggle.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+      });
     </script>
-     <main id="blogText">
+    <main id="blogText"></main>
+    <main id="blogtwo"></main>
 
-
-
-
-
-
+    <footer>
+        <h4 id="love">Made with <span style="color: red;">&#10084</span> by Thomas</h4>
         
-    </main>
+      <ul>
+        <li><h4>Portfolio: Thomas</h4></li>
+        <li><h4>Blog: Full Stack Blog</h4></li>
+        <li><h4>Email: thomas8989@g.com</h4></li>
+      </ul>
+    </footer>
 
-     
-   
-   
-<footer>
-    <ul>
-        <li><h2>Portfolio: Thomas</h2></li>
-        <li><h2>Blog: Full Stack Blog</h2></li>
-        <li><h2>Email: thomas8989@g.com</h2></li>
-    </ul>
-
-
-</footer>
-
- <script  src="./assete/js/blog.js"></script>
+    <script src="./assete/js/blog.js"></script>
     <script src="./assete/js/logic.js"></script>
-
-</body>
-
-
-
-
-    
+  </body>
 </html>
-
-    
